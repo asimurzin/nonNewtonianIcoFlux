@@ -26,7 +26,7 @@
 
 #--------------------------------------------------------------------------------------
 from Foam import FOAM_VERSION, FOAM_REF_VERSION, FOAM_BRANCH_VERSION
-if FOAM_REF_VERSION( ">=", "010600" ):
+if FOAM_REF_VERSION( ">=", "010600" ) and FOAM_REF_VERSION( "<=", "010701" ):
     from nonNewtonianIcoFlux.r1_6 import *
     pass
    
@@ -38,7 +38,7 @@ if FOAM_BRANCH_VERSION( "dev", ">=", "010600" ):
   
 
 #--------------------------------------------------------------------------------------
-if FOAM_VERSION( ">=", "020000" ):
+if FOAM_VERSION( ">=", "020000" ) and FOAM_VERSION( "<=", "020100" ):
     from nonNewtonianIcoFlux.r2_0_0 import *
     pass
   
